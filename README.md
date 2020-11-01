@@ -1,6 +1,8 @@
-WIP remake of https://chloechantelle.com 🚧
+💻 Hosted on: https://chloechantelle.github.io/portfolio
 
-Tech: 
+🚧 WIP remake of: https://chloechantelle.com
+
+👩🏻‍💻 Tech: 
  - React
  - Typescript
  - SCSS
