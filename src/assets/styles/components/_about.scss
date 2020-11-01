@@ -1,0 +1,20 @@
+.about {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    // background: url("../../images/code.png");  
+    &-container {
+        width: 30%;
+        margin: 0 auto;
+    }
+    &-item {
+        // flex: 0 0 33%;
+        padding: $base-spacing;
+        border: 1px solid #aaa;
+        &-body {
+            font-size: $base-font-size * 1;
+        }
+    }
+}

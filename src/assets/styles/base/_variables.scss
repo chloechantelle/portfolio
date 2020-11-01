@@ -1,0 +1,35 @@
+// * Colors
+$body-background: #1b1b1b;
+$body-text: #ccc;
+$accent-primary: #e090b7;
+$accent-secondary: #e090b7;
+
+// * Fonts
+$font-family: 'Open Sans';
+$base-font-size: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+// * Spacing
+$base-spacing: 1rem;
+
+$mobile: 600px;
+$laptop: 1080px;
+$desktop: 1920px;
+
+
+// TODO move to mixin
+
+.highlight {
+    transition: background-size 0.4s ease;
+    background: linear-gradient(to bottom, transparent 62%, var(--alt-color) 0)
+        center center/0% 75% no-repeat;
+    font-size: 2rem;
+    padding: 0 6px 2px 6px;
+    cursor: pointer;
+    color: var(--main-color);
+    background-size: 80% 100%;
+    text-decoration: none;
+}
+.highlight:hover {
+    background-size: 100% 100%;
+}
