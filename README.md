@@ -20,11 +20,11 @@ My personal portfolio, built with <a href="https://reactjs.org" target="_blank">
 👩🏻‍💻 Tech used:
 </h3>
 
-<ul list-style-type="none" align="center">
+<ul align="center">
 
-<li> ▹ <a href="https://reactjs.org" target="_blank">React</a></li>
-<li> ▹ Typescript</li>
-<li> ▹ SCSS</li>
-<li> ▹ <a href="https://www.npmjs.com/package/aos">AOS</a></li>
+<p> ▹ <a href="https://reactjs.org" target="_blank">React</a></p>
+<p> ▹ Typescript</p>
+<p> ▹ SCSS</p>
+<p> ▹ <a href="https://www.npmjs.com/package/aos">AOS</a></p>
 
 </ul>
