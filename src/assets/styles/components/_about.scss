@@ -73,6 +73,7 @@
                 font-size: $base-font-size * 1.5;
             }
             &-text {
+                display: block;
                 padding: $base-spacing * 1.25;
                 font-size: $base-font-size * 0.8;
                 &-item {
@@ -81,9 +82,9 @@
                 &-item::before {
                     content: '▹';
                     position: absolute;
-                    left: 3rem;
+                    left: 2rem;
                     font-size: $base-font-size;
-                    line-height: 28px;
+                    line-height: 22px;
                     color: $accent-secondary;
                 }
             }
