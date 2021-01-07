@@ -1,0 +1,144 @@
+.projects {
+    background: $body-background;
+    &-heading {
+        font-family: Arame, sans-serif;
+        font-size: $base-font-size * 2;
+        padding: $base-spacing * 3 0;
+        text-align: center;
+    }
+    &-content {
+        flex-flow: wrap;
+        &-item {
+            display: flex;
+            flex-flow: wrap;
+            margin: $base-spacing * 4 0;
+            &-description {
+                flex: 0 0 100%;
+                z-index: 1;
+                &-title {
+                    font-family: Arame, sans-serif;
+                    font-size: $base-font-size * 1.25;
+                    margin: $base-spacing 0;
+                    text-align: center;
+                    color: $accent-primary;
+                }
+                &-type {
+                    font-family: Arame, sans-serif;
+                    font-size: $base-font-size * 0.7;
+                    padding: $base-spacing * 0.5 0 $base-spacing * 1.5 0;
+                    text-align: center;
+                    letter-spacing: 0.15rem;
+                }
+                &-body {
+                    font-size: $base-font-size * 0.7;
+                    padding: $base-spacing * 1.5;
+                    min-width: auto;
+                    background: $body-background-light;
+                }
+                &-tech {
+                    font-family: Arame, sans-serif;
+                    font-size: $base-font-size * 0.7;
+                    padding: $base-spacing * 1.5;
+                    text-align: center;
+                    word-spacing: $base-spacing * 1.5;
+                }
+                &-cta {
+                    padding: $base-spacing * 1.5;
+                    text-align: center;
+                }
+            }
+            &-screenshot {
+                flex: 0 0 100%;
+                position: absolute;
+                left: 0;
+                min-width: 0;
+                width: 100%;
+                z-index: 0;
+                &-container {
+                    position: relative;
+                    height: 100%;
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: rgba(27, 27, 27, 0.8);
+                        transition: all 0.3s linear;
+                    }
+                    &:hover:after {
+                        background: none;
+                    }
+                    &:hover::after,
+                    &:focus::after,
+                    &:hover img,
+                    &:focus img {
+                        background: transparent;
+                        filter: none;
+                    }
+                }
+                &-image {
+                    width: 100%;
+                    filter: grayscale(100%) contrast(1) brightness(90%);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $mobile) {
+    .projects {
+        &-heading {
+            text-align: inherit;
+        }
+        &-content {
+            &-item {
+                &-description {
+                    &-title,
+                    &-type,
+                    &-tech,
+                    &-cta {
+                        text-align: inherit;
+                    }
+                    &--right {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .projects {
+        &-content {
+            &-item {
+                flex-flow: row;
+                &--right {
+                    flex-direction: row-reverse;
+                }
+                &-description {
+                    flex: 0 0 40%;
+                    &-body {
+                        min-width: 450px;
+                    }
+                }
+                &-screenshot {
+                    flex: 0 0 60%;
+                    position: inherit;
+                    margin-left: -150px;
+                    padding: $base-spacing;
+                    &--right {
+                        margin-left: 0px;
+                        margin-right: -150px;
+                    }
+                    &-container:after {
+                        background: rgba(226, 39, 148, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}

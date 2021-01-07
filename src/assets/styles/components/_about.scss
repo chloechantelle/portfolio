@@ -1,20 +1,107 @@
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .about {
+    position: relative;
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
     justify-content: center;
-    height: 100vh;
     align-items: center;
-    // background: url("../../images/code.png");  
+    background: $body-background;
+    z-index: 0;    
     &-container {
-        width: 30%;
-        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+        align-items: center;
+        z-index: 1;
+    }
+    &-heading {
+        display: flex;
+        align-self: flex-end;
+        &-title {
+            font-family: Arame, sans-serif;
+            font-size: $base-font-size * 1.5;
+        }
     }
     &-item {
-        // flex: 0 0 33%;
-        padding: $base-spacing;
-        border: 1px solid #aaa;
+        flex: 0 0 100%;
+        margin: 0 $base-spacing;
+        &-container {
+            position: relative;
+            background: $body-background-light;
+            &:after {
+                content: '';
+                position: absolute;
+                top: calc(-1 * 0.25rem);
+                left: calc(-1 * 0.25rem);
+                height: calc(100% + 0.25rem * 2);
+                width: calc(100% + 0.25rem * 2);
+                background: linear-gradient(
+                    60deg,
+                    #f79533,
+                    #f37055,
+                    #ef4e7b,
+                    #a166ab,
+                    #5073b8,
+                    #1098ad,
+                    #07b39b,
+                    #6fba82
+                );
+                z-index: -1;
+                animation: animatedgradient 3s ease alternate infinite;
+                background-size: 300% 300%;
+            }
+        }
+
         &-body {
             font-size: $base-font-size * 1;
+            padding: $base-spacing;
+            min-height: 390px;
+            &-title {
+                padding: $base-spacing;
+                font-family: Arame, sans-serif;
+                font-size: $base-font-size * 1.5;
+            }
+            &-text {
+                padding: $base-spacing * 1.25;
+                font-size: $base-font-size * 0.8;
+                &-item {
+                    list-style-type: none;
+                }
+                &-item::before {
+                    content: '▹';
+                    position: absolute;
+                    left: 3rem;
+                    font-size: $base-font-size;
+                    line-height: 28px;
+                    color: $accent-secondary;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .about {
+        min-height: 100vh;
+        &-container {
+            flex-flow: row;
+        }
+        &-item {
+            flex: 0 0 50%;
+        }
+        &-bars {
+            display: block;
         }
     }
 }

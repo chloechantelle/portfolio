@@ -1,0 +1,53 @@
+.timeline {
+    min-height: 100vh;
+    background: $body-background;
+    &-heading {
+        font-size: $base-font-size * 2;
+        padding: $base-spacing * 3 0;
+        font-family: Arame, sans-serif;
+        text-align: center;
+    }
+    &-content {
+        &-event {
+            display: flex;
+            flex-direction: column;
+            &-date {
+                flex: 0 0 20%;
+                align-self: center;
+                min-width: 130px;
+                &-text {
+                    padding: $base-spacing;
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+            &-name {
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 80%;
+                border-left: 6px solid $accent-primary;
+                background: $body-background-light;
+                &-title {
+                    padding: $base-spacing;
+                }
+                &-body {
+                    padding: $base-spacing;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .timeline {
+        &-heading {
+            text-align: inherit;
+        }
+        &-content  {
+            &-event {
+                flex-direction: row;
+            }
+        }
+    }
+}

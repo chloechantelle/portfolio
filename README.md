@@ -1,8 +1,30 @@
-💻 Hosted on: https://chloechantelle.github.io/portfolio
+<div align="center">
+  <img alt="Chloe Chantelle Logo" src="https://github.com/chloechantelle/portfolio/blob/main/src/assets/images/favi-pink.png" width="100" />
+</div>
 
-🚧 WIP remake of: https://chloechantelle.com
+<h1 align="center">
+  <a href="https://chloechantelle.com">chloechantelle.com</a>
+</h1>
 
-👩🏻‍💻 Tech: 
- - React
- - Typescript
- - SCSS
+<p align="center">
+My personal portfolio, built with <a href="https://reactjs.org" target="_blank">React</a> and hosted with <a href="https://www.netlify.com" target="_blank">Netlify</a>.
+</p>
+
+<p align="center">
+  <a href="https://app.netlify.com/sites/chloechantelle/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/262d123f-3102-4084-bdcb-0262becc50ca/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+
+<h3 align="center">
+👩🏻‍💻 Tech used:
+</h3>
+
+<ul list-style-type="none" align="center">
+
+<li> ▹ <a href="https://reactjs.org" target="_blank">React</a></li>
+<li> ▹ Typescript</li>
+<li> ▹ SCSS</li>
+<li> ▹ <a href="https://www.npmjs.com/package/aos">AOS</a></li>
+
+</ul>

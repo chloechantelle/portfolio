@@ -1,18 +1,30 @@
 import React from 'react';
-// import { coverTypes } from '../interfaces/cover';
 
-// position absoute, same position, repeat component in each section of home
+interface sidenavTypes {
+    previousNav: string;
+    currentNav: string;
+    nextNav: string;
+}
 
-class Sidenav extends React.Component {
+class Sidenav extends React.Component<sidenavTypes> {
     constructor(props: any) {
-        super(props);        
-        // this.state = { date: new Date() };
-    }    
+        super(props);
+    }
 
     render() {
         return (
-            <div>
-                <h1>Sidenav component</h1>
+            <div className="sidenav">
+                <div className="sidenav-container">
+                    <div className="sidenav-prev">
+                        {this.props.previousNav}
+                    </div>
+                    <div className="sidenav-current">
+                        {this.props.currentNav}
+                    </div>
+                    <div className="sidenav-next">
+                        {this.props.nextNav}
+                    </div>
+                </div>
             </div>
         );
     }

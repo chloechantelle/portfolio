@@ -1,0 +1,39 @@
+.footer {
+    padding: $base-spacing;
+    text-align: center;
+    background: $body-background;
+    &-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: $base-spacing;
+        &-item {
+            padding: $base-spacing;
+        }
+    }
+    &-note {
+        font-size: $base-font-size * 0.75;
+        &-heart::before,
+        &-heart::after {
+            content: '♥';
+            margin: 0px 5px 0px 5px;
+            opacity: 0;
+            color: $accent-primary;
+            transition: ease-in-out 0.3s;
+        }
+
+        &-heart:hover:before,
+        &-heart:hover:after {
+            opacity: 1 !important;
+            transition: ease-in-out 0.3s;
+        }
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .footer {
+        &-social {
+            display: none;
+        }
+    }
+}

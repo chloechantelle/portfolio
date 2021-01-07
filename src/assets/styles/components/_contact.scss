@@ -1,0 +1,44 @@
+.contact {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: $body-background;
+    &-item {
+        text-align: center;
+        &-avatar {
+            display: flex;
+            justify-content: center;
+            &-image {
+                align-self: center;
+                max-width: 250px;
+                padding: $base-spacing * 0.75;
+                border-radius: $base-spacing * 15;
+                border: 10px solid $accent-primary;
+            }
+        }
+        &-heading {
+            font-family: Arame, sans-serif;
+            font-size: $base-font-size * 2.5;
+            padding: $base-spacing;            
+        }
+        &-text {
+            font-size: $base-font-size;
+            padding: $base-spacing;
+        }
+        &-cta {
+            padding: $base-spacing;
+        }
+    }
+}
+
+@media only screen and (min-width: $laptop) {
+    .contact {
+        &-item {
+            flex: 0 0 40%;
+            text-align: inherit;
+        }
+    }
+}

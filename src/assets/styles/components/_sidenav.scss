@@ -1,0 +1,26 @@
+.sidenav {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    align-items: center;  
+    &-prev {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        transform: rotate(270deg);
+    }
+    &-current {
+        position: absolute;
+        top: 47%;
+        left: 0;
+        transform: rotate(270deg);
+    }
+    &-next {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        transform: rotate(270deg);
+    }
+}

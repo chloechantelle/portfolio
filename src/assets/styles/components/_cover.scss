@@ -1,5 +1,3 @@
-// animations
-
 @keyframes cursor {
     0% {
         opacity: 0;
@@ -13,72 +11,73 @@
 }
 
 @keyframes line {
-    0% {        
-        transform-origin: 0% 0%;        
+    0% {
+        transform-origin: 0% 0%;
         transform: scale(1, 0);
     }
-    50% {       
-        transform-origin: 0% 0%;        
+    50% {
+        transform-origin: 0% 0%;
         transform: scale(1, 1);
     }
-    50.1% {        
-        transform-origin: 0% 100%;        
+    50.1% {
+        transform-origin: 0% 100%;
         transform: scale(1, 1);
     }
-    100% {        
-        transform-origin: 0% 100%;        
+    100% {
+        transform-origin: 0% 100%;
         transform: scale(1, 0);
     }
 }
 
-// move to seperate file //
-
-.centered {
-    text-align: center;
-    justify-content: center;
-}
-
-.flex {
-    display: flex;
-    width: 100%;
-    &-left {
-        flex: 0 0 50%;
-        p {
-            padding: 0 $base-spacing * 2;
-        }
-    }
-    &-right {
-        flex: 0 0 50%;
-        text-align: left;
-        p {
-            padding: 0 $base-spacing * 2;
-        }
-    }
-}
-
-// end of move to seperate file //
-
-//
-//
-// ** A component to display media and limited content, stretched to the page w/h
-//
-//
 .cover {
     display: flex;
     flex-flow: column;
-    // flex-flow: row wrap;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background: $body-background;
+    z-index: 2;
+    transition: ease-in-out 0.4s;
+    &-container {
+        display: flex;
+        flex-grow: 1;
+        flex-flow: wrap-reverse;
+        align-items: center;
+        margin: 0 auto;
+        padding: $base-spacing * 2;
+    }
+
+    &-info {
+        flex: 0 0 100%;
+        &-title {
+            font-size: $base-font-size * 2;
+            &-greeting {
+                color: $accent-primary;
+            }
+        }
+        &-body {
+            padding: $base-spacing 0;
+            &-text {
+                font-size: $base-font-size;
+            }
+        }
+        &-cta {
+            padding: $base-spacing 0;
+        }
+    }
+
     &-logo {
-        width: 100%;
-        align-self: center;
+        flex: 0 0 100%;
+        &-container {
+            align-self: center;
+            padding: $base-spacing;
+        }
         &-image {
-            // animation: moveLogo 3s infinite;
             img {
                 width: 50%;
             }
         }
         &-text {
-            font-size: $base-font-size * 7;
+            font-size: $base-font-size * 5;
             &--arrow {
                 letter-spacing: 0.25rem;
             }
@@ -101,11 +100,6 @@
             }
         }
     }
-    &-desc {
-        flex-grow: 1;
-        align-items: center;
-        text-align: right;
-    }
     &-bottom {
         flex-grow: 0;
         font-size: 40px;
@@ -113,15 +107,19 @@
         display: flex;
         order: 2;
         align-self: flex-end;
-        justify-content: center;        
+        justify-content: center;
         &-line {
             height: 100px;
             justify-content: center;
             text-align: center;
-            border-left: 4px solid #ccc;
+            border-left: 4px solid $body-text;
             animation: line 1.2s infinite;
+            &--hide {
+                transition: ease-in-out 0.5s;
+                opacity: 0;
+            }
         }
-        &-arrow {            
+        &-arrow {
             justify-content: center;
             text-align: center;
             margin-left: -17px;
@@ -131,11 +129,24 @@
     }
 }
 
-// larger than mobile (600px)
-
 @media only screen and (min-width: $mobile) {
     .cover {
+        &-container {
+            flex-flow: row;
+            width: 60%;
+        }
+        &-info {
+            flex: 0 0 70%;
+            &-title {
+                font-size: $base-font-size * 3;
+            }
+        }
         &-logo {
+            flex: 0 0 30%;
+            text-align: left;
+            &-text {
+                font-size: $base-font-size * 7;
+            }
             &-image {
                 img {
                     width: 25%;
