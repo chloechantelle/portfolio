@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../assets/images/favi-pink.png';
+import avatar from '../assets/images/avatar.png';
 import { Mail } from 'react-feather';
 
 class Contact extends React.Component {
@@ -9,7 +9,7 @@ class Contact extends React.Component {
             <div className="contact">
                 <div data-aos="fade-right" className="contact-item">
                     <div className="contact-item-avatar">
-                        <img src={avatar} alt="avatar" className="contact-item-avatar-image" />
+                        <img src={avatar} alt="avatar" className="contact-item-avatar-image" />                        
                     </div>
                 </div>
                 <div data-aos="fade-left" className="contact-item">
@@ -24,7 +24,7 @@ class Contact extends React.Component {
                             className="link link--btn link--btn--primary"
                             target="_blank" rel="noopener noreferrer">
                             <Mail /> Contact me
-                        </a>                        
+                        </a>
                     </div>
                 </div>
             </div>
