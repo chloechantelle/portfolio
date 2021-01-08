@@ -10,17 +10,38 @@
         text-align: center;
         &-avatar {
             display: flex;
+            position: relative;
             justify-content: center;
             &-image {
+                position: relative;
                 align-self: center;
-                max-width: 600px;
+                max-width: 450px;
                 padding: $base-spacing * 0.75;
+            }
+            &-note {
+                position: absolute;
+                bottom: 0;
+                left: 25%;
+                right: 25%;
+                font-size: $base-font-size * 0.75;
+                border: 3px solid $accent-primary;
+                text-align: center;
+                border-radius: $base-spacing * 2;
+                padding: $base-spacing 0;
+                width: 150px;
+                margin: 0 auto;
+                background: $body-background;
+                transition: ease-in-out 0.3s;
+                opacity: 0;
+            }
+            &:hover &-note {
+                opacity: 1;
             }
         }
         &-heading {
             font-family: Arame, sans-serif;
             font-size: $base-font-size * 2.5;
-            padding: $base-spacing;            
+            padding: $base-spacing;
         }
         &-text {
             font-size: $base-font-size;

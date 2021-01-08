@@ -45,7 +45,7 @@ class Cover extends React.Component<any, IState> {
                                 <span role="img" aria-label="Woman with laptop">👩🏻‍💻</span>
                             </h2>
                             <h2 className="cover-info-body-text">Passionate about minimalism, video games and good coffee
-                            <span role="img" aria-label="Coffee cup">☕</span>
+                            <span role="img" aria-label="Coffee cup"> ☕</span>
                             </h2>
                         </div>
 

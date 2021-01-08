@@ -9,7 +9,12 @@ class Contact extends React.Component {
             <div className="contact">
                 <div data-aos="fade-right" className="contact-item">
                     <div className="contact-item-avatar">
-                        <img src={avatar} alt="avatar" className="contact-item-avatar-image" />                        
+                        <div className="contact-item-avatar-container">
+                            <img src={avatar} alt="avatar" className="contact-item-avatar-image" />
+                            <div className="contact-item-avatar-note">
+                                Art by Corverus-
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div data-aos="fade-left" className="contact-item">
