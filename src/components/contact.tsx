@@ -25,7 +25,7 @@ class Contact extends React.Component {
                         My inbox is always open, whether you have a question or just want to say hi, I'll try my best to get back to you!
                     </div>
                     <div className="contact-item-cta">
-                        <a href="mailto:chloe@chloechantelle.com"
+                        <a href="mailto:chloechantellepotter@gmail.com"
                             className="link link--btn link--btn--primary"
                             target="_blank" rel="noopener noreferrer">
                             <Mail /> Contact me

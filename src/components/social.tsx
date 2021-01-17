@@ -24,7 +24,7 @@ class Social extends React.Component {
                 <a href="https://chloechantelle.deviantart.com" title="DeviantArt" className="social-item link link--txt" target="_blank" rel="noopener noreferrer">
                     <ExternalLink />
                 </a>
-                <a href="mailto:chloe@chloechantelle.com" title="Email" className="social-item link link--txt" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:chloechantellepotter@gmail.com" title="Email" className="social-item link link--txt" target="_blank" rel="noopener noreferrer">
                     <Mail />
                 </a>
             </div>

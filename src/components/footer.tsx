@@ -19,7 +19,7 @@ class Footer extends React.Component {
                     <a href="https://gist.github.com/chloechantelle" className="footer-social-item link link--txt" target="_blank" rel="noopener noreferrer">
                         <Code />
                     </a>
-                    <a href="mailto:chloe@chloechantelle.com" className="footer-social-item link link--txt" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:chloechantellepotter@gmail.com" className="footer-social-item link link--txt" target="_blank" rel="noopener noreferrer">
                         <Mail />
                     </a>
                 </div>

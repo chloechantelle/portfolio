@@ -50,7 +50,7 @@ class Cover extends React.Component<any, IState> {
                         </div>
 
                         <div className="cover-info-cta">
-                            <a href="mailto:chloe@chloechantelle.com"
+                            <a href="mailto:chloechantellepotter@gmail.com"
                                 className="link link--btn link--btn--primary"
                                 target="_blank" rel="noopener noreferrer">
                                 <Mail /> Contact
