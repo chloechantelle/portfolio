@@ -69,7 +69,7 @@ class About extends React.Component {
                                     <div className="tooltip">
                                         <span className="link link--noClick"> my plants</span>
                                         <span>.</span>
-                                        <span className="tooltip-text">we're up to 16 atm</span>
+                                        <span className="tooltip-text">we're up to 11 atm</span>
                                     </div>
                                 </span>
                             </div>
