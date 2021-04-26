@@ -11,7 +11,7 @@ class Contact extends React.Component {
                     <div className="contact-item-avatar">
                         <div className="contact-item-avatar-container">
                             <img src={avatar} alt="avatar" className="contact-item-avatar-image" />
-                            <a href="https://www.deviantart.com/corverus0" target="_blank" className="contact-item-avatar-note link link--txt">
+                            <a href="https://www.deviantart.com/corverus0" target="_blank" rel="noopener noreferrer" className="contact-item-avatar-note link link--txt">
                                 Art by Corverus-
                             </a>
                         </div>
