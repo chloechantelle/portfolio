@@ -8,27 +8,27 @@ class Sidenav extends React.Component<any> {
             <div className="sidenav">
                 <div className="sidenav-container">
                     <a href="#contact" className="link link--txt sidenav-item">
-                        <span className="sidenav-item-icon">
+                        <div className="sidenav-item-icon">
                             <Mail />
-                        </span>
+                        </div>
                         Contact
                     </a>
                     <a href="#projects" className="link link--txt sidenav-item">
-                        <span className="sidenav-item-icon">
+                        <div className="sidenav-item-icon">
                             <Terminal />
-                        </span>
+                        </div>
                         Projects
                     </a>
                     <a href="#experience" className="link link--txt sidenav-item">
-                        <span className="sidenav-item-icon">
+                        <div className="sidenav-item-icon">
                             <Code />
-                        </span>
+                        </div>
                         Experience
                     </a>
                     <a href="#about" className="link link--txt sidenav-item">
-                        <span className="sidenav-item-icon">
+                        <div className="sidenav-item-icon">
                             <Smile />
-                        </span>
+                        </div>
                         About
                     </a>
                 </div>

@@ -30,12 +30,12 @@
 }
 
 .cover {
+    position: relative;
     display: flex;
     flex-flow: column;
     min-height: 100vh;
     width: 100%;
     background: $body-background;
-    z-index: 2;
     transition: ease-in-out 0.4s;
     &-container {
         display: flex;
