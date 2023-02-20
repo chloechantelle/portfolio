@@ -6,6 +6,7 @@ import project3 from '../assets/images/projects/W10DN.gif';
 import project4 from '../assets/images/projects/completionist.gif';
 import project5 from '../assets/images/projects/Valerie.gif';
 import project6 from '../assets/images/projects/Snow.gif';
+import project7 from '../assets/images/projects/portfolio.mp4';
 
 import { GitHub, ExternalLink } from 'react-feather';
 
@@ -14,13 +15,39 @@ class Projects extends React.Component {
 
     render() {
         return (
-            <div data-aos="fade-up" className="projects container">
+            <div data-aos="fade-up" className="projects container" id="projects">
 
                 <div className="projects-heading">
                     &#62; 04. — Projects
                 </div>
 
                 <div className="projects-content">
+
+                    <div className="projects-content-item projects-content-item--right" data-aos="fade-left">
+                        <div className="projects-content-item-description projects-content-item-description--right">
+                            <h3 className="projects-content-item-description-title">
+                                PD Portfolio
+                            </h3>
+                            <h3 className="projects-content-item-description-type">
+                                Website
+                            </h3>
+                            <p className="projects-content-item-description-body">
+                                I worked with a Product Designer to create a portfolio for him, we worked together to understand the brand identity he wanted to have on the website and what features he needed. We achieved a portfolio that showcases all of his different types of art projects, seperate pages for each project with navigation between, his experience and his background. I used ReactJS with NextJS to create the project pages and SCSS for styling.
+                            </p>
+                            <p className="projects-content-item-description-tech">ReactJS NextJS SCSS</p>
+                        </div>
+                        <div className="projects-content-item-screenshot projects-content-item-screenshot--right">
+                            <div className="projects-content-item-screenshot-container">
+                                <video
+                                    className="projects-content-item-screenshot-image"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    src={project7}
+                                />
+                            </div>
+                        </div>
+                    </div>
 
                     <div className="projects-content-item" data-aos="fade-right">
                         <div className="projects-content-item-description">
@@ -156,7 +183,7 @@ class Projects extends React.Component {
                                 Startpage
                             </h3>
                             <p className="projects-content-item-description-body">
-                                Snow originally started out as a test to see if I could get snowflakes to fall as realistically as possible without having any noticeable "stop" points. Later on I wanted to implement a link menu and then expermented with replacing the default context menu of a website.
+                                Snow originally started out as a test to see if I could get snowflakes to fall as realistically as possible without having any noticeable "stop" points. Later on I wanted to implement a link menu and then experimented with replacing the default context menu of a website.
                             </p>
                             <p className="projects-content-item-description-tech">HTML CSS jQuery</p>
                             <a className="link link--txt projects-content-item-description-cta" href="https://github.com/chloechantelle/snow">

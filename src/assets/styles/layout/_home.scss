@@ -5,6 +5,10 @@ body {
     background: $body-background;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .home {
     overflow-x: hidden;
 }

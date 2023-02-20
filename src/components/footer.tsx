@@ -26,7 +26,7 @@ class Footer extends React.Component {
 
                 <div className="footer-note-heart">
                 <a className="footer-note link link--txt" href="https://github.com/chloechantelle/portfolio">
-                    Made w/ love by Coco
+                    Made w/ love by CC.
                 </a>
                 </div>
 

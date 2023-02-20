@@ -12,20 +12,21 @@ import Contact from './components/contact';
 import Social from './components/social';
 import Projects from './components/projects';
 import Footer from './components/footer';
+import Sidenav from './components/sidenav';
 
-interface appTypes {
+interface navTypes {
   previous: string;
   current: string;
   next: string;
 }
 
-class App extends React.Component<any, appTypes> {
+class App extends React.Component<any, navTypes> {
   constructor(props: any) {
     super(props);
 
     this.state = {
-      previous: 'prev',
-      current: 'curr',
+      previous: 'previous',
+      current: 'current',
       next: 'next',
     };
 
@@ -55,6 +56,7 @@ class App extends React.Component<any, appTypes> {
           <meta name="theme-color" content="#d483a0" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Helmet>
+        <Sidenav />
         <Cover />
         <Social />
         <About />

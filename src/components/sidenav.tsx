@@ -1,12 +1,7 @@
 import React from 'react';
+import { Smile, Code, Mail, Terminal } from 'react-feather';
 
-interface sidenavTypes {
-    previousNav: string;
-    currentNav: string;
-    nextNav: string;
-}
-
-class Sidenav extends React.Component<sidenavTypes> {
+class Sidenav extends React.Component<any> {
     constructor(props: any) {
         super(props);
     }
@@ -15,15 +10,30 @@ class Sidenav extends React.Component<sidenavTypes> {
         return (
             <div className="sidenav">
                 <div className="sidenav-container">
-                    <div className="sidenav-prev">
-                        {this.props.previousNav}
-                    </div>
-                    <div className="sidenav-current">
-                        {this.props.currentNav}
-                    </div>
-                    <div className="sidenav-next">
-                        {this.props.nextNav}
-                    </div>
+                    <a href="#contact" className="link link--txt sidenav-item">
+                        <span className="sidenav-item-icon">
+                            <Mail />
+                        </span>
+                        Contact
+                    </a>
+                    <a href="#projects" className="link link--txt sidenav-item">
+                        <span className="sidenav-item-icon">
+                            <Terminal />
+                        </span>
+                        Projects
+                    </a>
+                    <a href="#experience" className="link link--txt sidenav-item">
+                        <span className="sidenav-item-icon">
+                            <Code />
+                        </span>
+                        Experience
+                    </a>
+                    <a href="#about" className="link link--txt sidenav-item">
+                        <span className="sidenav-item-icon">
+                            <Smile />
+                        </span>
+                        About
+                    </a>
                 </div>
             </div>
         );

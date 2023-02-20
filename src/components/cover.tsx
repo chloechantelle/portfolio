@@ -36,15 +36,15 @@ class Cover extends React.Component<any, IState> {
 
                         <h1 className="cover-info-title">
                             <span className="cover-info-title-greeting">Hi, </span>
-                            I'm Chloe Chantelle Hoffman
+                            I'm Chloe
                         </h1>
 
                         <div className="cover-info-body">
-                            <h2 className="cover-info-body-text">Front End Developer
+                            <h2 className="cover-info-body-text">I'm a Front End Developer
                                 <a href="https://www.findex.com.au/home" className="link link--txt" target="_blank" rel="noopener noreferrer"> @Findex </a>
                                 <span role="img" aria-label="Woman with laptop">👩🏻‍💻</span>
                             </h2>
-                            <h2 className="cover-info-body-text">Passionate about minimalism, video games and good coffee
+                            <h2 className="cover-info-body-text">I have a passion for minimalism, space exploration, AI, video games and good coffee
                             <span role="img" aria-label="Coffee cup"> ☕</span>
                             </h2>
                         </div>

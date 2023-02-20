@@ -27,14 +27,14 @@
         color: $accent-primary;
         cursor: pointer;
         &:hover {
-            animation: rainbow 4s infinite;
+            animation: softRainbow 4s infinite;
         }
     }
     &--noClick {
         color: $accent-primary;
         cursor: grabbing;
         &:hover {
-            animation: rainbow 4s infinite;
+            animation: softRainbow 4s infinite;
         }
     }
     &--ow:hover ~ .hover-video--ow {

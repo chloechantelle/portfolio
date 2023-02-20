@@ -6,14 +6,11 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contact">
+            <div className="contact" id="contact">
                 <div data-aos="fade-right" className="contact-item">
                     <div className="contact-item-avatar">
                         <div className="contact-item-avatar-container">
                             <img src={avatar} alt="avatar" className="contact-item-avatar-image" />
-                            <a href="https://www.deviantart.com/corverus0" target="_blank" rel="noopener noreferrer" className="contact-item-avatar-note link link--txt">
-                                Art by Corverus-
-                            </a>
                         </div>
                     </div>
                 </div>

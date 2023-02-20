@@ -1,5 +1,8 @@
 .timeline {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: $body-background;
     &-heading {
         font-size: $base-font-size * 2;
@@ -7,32 +10,53 @@
         font-family: Arame, sans-serif;
         text-align: center;
     }
-    &-content {
-        &-event {
-            display: flex;
-            flex-direction: column;
-            &-date {
-                flex: 0 0 20%;
-                align-self: center;
-                min-width: 130px;
-                &-text {
-                    padding: $base-spacing;
-                    text-align: center;
-                    font-size: 13px;
-                }
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+    &-tabs {
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 20%;
+        justify-content: center;
+        &-tabItem {
+            padding: $base-spacing;
+            border-bottom: 5px solid $body-background;
+            font-size: $base-font-size * 0.75;
+            font-weight: 600;
+            color: $body-text-light;
+            &:hover {
+                color: $accent-primary;
+                cursor: pointer;
+                transition: ease-in-out 0.3s;
             }
+            &--active {
+                border-bottom: 5px solid $accent-primary;
+                color: $body-text;
+            }
+        }
+    }
+    &-content {
+        flex: 0 0 80%;
+        padding: 0 $base-spacing;
+        margin: $base-spacing 0;
+        &-event {
+            padding: $base-spacing / 2 $base-spacing;
+            background: $body-background-light;
             &-name {
-                display: flex;
-                flex-direction: column;
-                flex: 0 0 80%;
-                border-left: 6px solid $accent-primary;
-                background: $body-background-light;
                 &-title {
-                    padding: $base-spacing;
+                    padding: $base-spacing / 2;
+                    font-size: $base-font-size * 1.25;
+                }
+                &-subtitle {
+                    padding: 0 $base-spacing / 2;
+                    font-size: $base-font-size * 0.75;
+                    color: $body-text-light;
                 }
                 &-body {
-                    padding: $base-spacing;
-                    font-size: 13px;
+                    padding: 0 $base-spacing * 1.75;
+                    font-size: $base-font-size * 0.75;
+                    color: $body-text-light;
                 }
             }
         }
@@ -44,7 +68,23 @@
         &-heading {
             text-align: inherit;
         }
+        &-container {
+            flex-direction: row;
+        }
+        &-tabs {
+            flex-direction: column;
+            justify-content: start;
+            &-tabItem {
+                border-bottom: 0;
+                border-right: 5px solid $body-background;
+                &--active {
+                    border-right: 5px solid $accent-primary;
+                    color: $body-text;
+                }
+            }
+        }
         &-content  {
+            margin: 0;
             &-event {
                 flex-direction: row;
             }
