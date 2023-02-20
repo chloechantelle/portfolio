@@ -2,9 +2,6 @@ import React from 'react';
 import { Smile, Code, Mail, Terminal } from 'react-feather';
 
 class Sidenav extends React.Component<any> {
-    constructor(props: any) {
-        super(props);
-    }
 
     render() {
         return (
