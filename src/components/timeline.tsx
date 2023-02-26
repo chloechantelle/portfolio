@@ -55,7 +55,7 @@ class Timeline extends React.Component<{}, any> {
                                             <li>Present product results at the end of every life cycle to all team members and Product Management, and present large scale features to internal business stakeholders and chief executives.</li>
                                             <li>Completed an internally held company leadership program to improve my leadership and business skills. </li>
                                             <li>Mentor and teach experienced Developers and new hires in a distributed working environment.</li>
-                                            <li>Worked on an internally used Component Library that uses Web Components and Storybook to create components that use the Atomic Design approach to bridge the gap between Stakeholder, PD and Dev.</li>
+                                            <li>Collaborate with Lead and Front End Developers to create and iteratively improve upon an internally used Component Library that uses Web Components and Storybook to create components that use the Atomic Design approach to bridge the gap between Stakeholder, PD and Dev.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -118,7 +118,7 @@ class Timeline extends React.Component<{}, any> {
                                         <p className="timeline-content-event-name-title">Freelance Commission and Collaboration Projects</p>
                                         <p className="timeline-content-event-name-subtitle">2015 - 2018</p>
                                         <ul className="timeline-content-event-name-body">
-                                            <li>Collaborated with artists and developers to create web projects for consumers including static sites, startpages, mockups and Visual Styles with the most popular one having over 1k favorites.</li>
+                                            <li>Collaborated with artists and developers to create web projects for consumers including static sites, startpages, mockups and Visual Styles with the most popular one having over half a million views and 1k favorites.</li>
                                             <li>Communicated with clients to achieve the commission that they wanted.</li>
                                         </ul>
                                     </div>

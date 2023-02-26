@@ -1,6 +1,7 @@
 import React from 'react';
 import owVideo from '../assets/videos/overwatch.mp4';
 import cybVideo from '../assets/videos/cyberpunk.webm';
+import erVideo from '../assets/videos/eldenring.mp4';
 
 class About extends React.Component {
 
@@ -34,8 +35,9 @@ class About extends React.Component {
 
                                 <p className="about-item-body-text">
                                     In my free time I enjoy playing video games such as
-                                    <span className="link link--noClick link--ow">&nbsp;Overwatch 2</span>, <span className="link link--noClick link--cb">Cyberpunk 2077</span> and <span className="link link--noClick link--sb">Soulsbornes
-                                    </span>.
+                                    <span className="link link--noClick link--ow">&nbsp;Overwatch 2</span>,&nbsp;
+                                    <span className="link link--noClick link--er">Soulsbornes</span> and&nbsp;
+                                    <span className="link link--noClick link--cb">Cyberpunk 2077</span>.
 
                                     <span className="hover-video hover-video--ow">
                                         <video width="450" autoPlay loop muted>
@@ -57,6 +59,18 @@ class About extends React.Component {
                                         <div className="hover-video-credit">
                                             <span className="hover-video-credit-text">
                                                 Source: CD Projekt Red/CD Projekt
+                                            </span>
+                                        </div>
+                                    </span>
+
+                                    <span className="hover-video hover-video--er">
+                                        <video width="450" autoPlay loop muted>
+                                            <source src={erVideo} type="video/webm" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <div className="hover-video-credit">
+                                            <span className="hover-video-credit-text">
+                                                Source: FromSoftware
                                             </span>
                                         </div>
                                     </span>

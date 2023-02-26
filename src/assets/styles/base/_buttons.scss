@@ -43,6 +43,9 @@
     &--cb:hover ~ .hover-video--cb {
         display: block;
     }
+    &--er:hover ~ .hover-video--er {
+        display: block;
+    }
     svg {
         vertical-align: sub;
     }
